@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from .ML_Files.Prediction import predict
 import nltk
-nltk.download()
 
+dwlr = nltk.downloader.Downloader()
+for pkg in dwlr.packages():
+    if pkg.subdir == 'taggers':
+        dwlr.download(pkg.id)
 
 # Create your views here.
 
