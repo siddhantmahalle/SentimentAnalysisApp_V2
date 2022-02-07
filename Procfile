@@ -1,0 +1,1 @@
+web: gunicorn SentimentAnalysisApp_V2.wsgi:application --log-file - --log-level debug
