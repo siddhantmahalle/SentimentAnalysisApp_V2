@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Twitter Sentiment Analysis</h1>
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+
+        <p>Enter the tweet:</p>
+        <label for="tweet">
+            <input type="text" id="tweet" name="text" size="50">
+        </label>
+
+        <input type="submit" name="Get Prediction">
+    </form>
+</body>
+</html>
