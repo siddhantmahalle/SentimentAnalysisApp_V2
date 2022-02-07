@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .ML_Files.Prediction import predict
+import nltk
+nltk.download()
 
 
 # Create your views here.
